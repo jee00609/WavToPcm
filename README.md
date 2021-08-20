@@ -14,4 +14,4 @@ test.SaveRaw(resourcesDirectory);
 
 ## Update Posting
 
-[Step 1](https://jee00609.github.io/java/how-convert-wav-to-raw/)
+[Wav To Raw - Step 1](https://jee00609.github.io/java/how-convert-wav-to-raw/)
