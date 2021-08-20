@@ -11,3 +11,7 @@ File resourcesDirectory = new File("Your Directoty with file.wav");
 WavToRaw test = new WavToRaw();
 test.SaveRaw(resourcesDirectory);
 ```
+
+## Update Posting
+
+[Step 1](https://jee00609.github.io/java/how-convert-wav-to-raw/)
