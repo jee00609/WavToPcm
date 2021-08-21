@@ -110,7 +110,6 @@ public class WavToRaw {
 			e.printStackTrace();
 		}
 		return audioBytes;
-
 	}
 
 }
