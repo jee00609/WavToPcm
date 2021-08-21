@@ -48,4 +48,6 @@ public void SaveRaw(File file) throws UnsupportedAudioFileException {
 
 ## Update Posting
 
-[Wav To Raw - Step 1](https://jee00609.github.io/java/how-convert-wav-to-raw/)
+[Wav To Raw PCM - Step 1](https://jee00609.github.io/java/how-convert-wav-to-raw/)
+
+[Wav To Raw PCM - Step 2](https://jee00609.github.io/java/how-convert-wav-to-raw2/)
