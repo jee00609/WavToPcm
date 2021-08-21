@@ -1,8 +1,8 @@
 # WavToRawPCM
 
-이것은 Wav 파일을 Raw 데이터로 변환하는 프로젝트 입니다.
+이것은 Wav 파일을 Raw PCM 데이터로 변환하여 저장하는 프로젝트 입니다.
 
-A project that can convert Wav files to raw data.
+This is a project that converts Wav files into Raw pcm  data and saves them.
 
 ## 사용법 (Usage)
 
