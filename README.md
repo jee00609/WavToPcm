@@ -16,30 +16,33 @@ test.SaveRaw(resourcesDirectory);
 WavToRaw.java
 
 ```Java
-	public void SaveRaw(File file) throws UnsupportedAudioFileException {
-		OutputStream output = null;
-
-		try {
-    
-      //Example -> output = new FileOutputStream("src/main/resources/static/audio/test.raw");
-			output = new FileOutputStream("Directory with Raw file that you make(Wav to Raw).raw");
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
-		try {
-			//핵심 코드
-			//core code
-			output.write(formatWavToRaw(changeFormat(AudioToByte(file), FORMAT)));
-
-			System.out.print("Success");
-
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+public void SaveRaw(File file) throws UnsupportedAudioFileException {
+	OutputStream output = null;
+	
+	try {
+	
+		//Example -> output = new FileOutputStream("src/main/resources/static/audio/test.raw");
+		output = new FileOutputStream("Directory with Raw file that you make(Wav to Raw).raw");
+	} 
+	catch (FileNotFoundException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
 	}
+
+	try {
+		//핵심 코드
+		//core code
+		output.write(formatWavToRaw(changeFormat(AudioToByte(file), FORMAT)));
+
+		//Just Test Code
+		//Can Delete
+		System.out.print("Success");
+
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+}
 ```
 
 
