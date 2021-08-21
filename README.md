@@ -6,11 +6,42 @@ A project that can convert Wav files to raw data.
 
 ## 사용법 (Usage)
 
+Main.java
 ```Java
-File resourcesDirectory = new File("Your Directoty with file.wav");
+File resourcesDirectory = new File("Your Directoty with file.wav that wants to change Raw");
 WavToRaw test = new WavToRaw();
 test.SaveRaw(resourcesDirectory);
 ```
+
+WavToRaw.java
+
+```Java
+	public void SaveRaw(File file) throws UnsupportedAudioFileException {
+		OutputStream output = null;
+
+		try {
+    
+      //Example -> output = new FileOutputStream("src/main/resources/static/audio/test.raw");
+			output = new FileOutputStream("Directory with Raw file that you make(Wav to Raw).raw");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		try {
+			//핵심 코드
+			//core code
+			output.write(formatWavToRaw(changeFormat(AudioToByte(file), FORMAT)));
+
+			System.out.print("Success");
+
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+```
+
 
 ## Update Posting
 
